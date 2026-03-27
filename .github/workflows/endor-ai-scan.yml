@@ -24,6 +24,7 @@ jobs:
         namespace: 'kriti-learn' 
         scan_dependencies: false
         scan_sast: false
+        pr: false
         enable_pr_comments: true
         github_token: ${{ secrets.GITHUB_TOKEN }} # Required for PR comments on new policy violations
         additional_args: --ai-sast
