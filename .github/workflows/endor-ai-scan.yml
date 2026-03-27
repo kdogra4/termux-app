@@ -1,4 +1,4 @@
-name: AI SAST
+name: Endor AI SAST
 on:
   workflow_dispatch:
   pull_request:
@@ -19,7 +19,7 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Endor SAST Scan
-      uses: endorlabs/github-action@v1.8
+      uses: endorlabs/github-action@v1.1.12
       with:
         namespace: 'kriti-learn' 
         scan_dependencies: false
